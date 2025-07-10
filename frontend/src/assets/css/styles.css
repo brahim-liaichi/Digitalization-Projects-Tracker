@@ -1,0 +1,151 @@
+/* Main layout styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8f9fa;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  /* App layout */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 250px;
+    min-height: calc(100vh - 56px - 56px); /* Viewport height minus header and footer */
+    position: sticky;
+    top: 0;
+    height: 100%;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar-link {
+    color: #495057;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+  }
+  
+  .sidebar-link:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    border-left-color: rgba(0, 123, 255, 0.5);
+  }
+  
+  .sidebar-link.active {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-left-color: #007bff;
+  }
+  
+  /* Footer */
+  .footer {
+    height: 56px;
+    line-height: 36px;
+  }
+  
+  /* Utility classes */
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .text-truncate-container {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Stats cards */
+  .stat-icon {
+    color: rgba(0, 123, 255, 0.6);
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .stat-label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Activity timeline */
+  .activity-timeline .list-group-item {
+    padding: 1rem;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .activity-indicator {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Form styles */
+  .form-label {
+    font-weight: 500;
+  }
+  
+  /* Table styles */
+  .table th {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  /* Card styles */
+  .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 0.75rem 1.25rem;
+  }
+  
+  /* File list */
+  .file-name {
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      position: relative;
+      min-height: auto;
+    }
+    
+    .main-container {
+      flex-direction: column;
+    }
+  }

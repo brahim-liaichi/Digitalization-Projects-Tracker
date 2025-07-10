@@ -1,0 +1,117 @@
+/* Project detail page */
+.project-detail-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-title {
+    margin-bottom: 0.25rem;
+  }
+  
+  .project-path {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+  }
+  
+  /* Project status */
+  .project-status-card h6 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .status-label {
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* File list */
+  .file-list {
+    width: 100%;
+  }
+  
+  .file-list th {
+    cursor: pointer;
+  }
+  
+  .file-list th:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .file-icon {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  
+  .file-name {
+    font-weight: 500;
+  }
+  
+  .file-path {
+    font-size: 0.75rem;
+    color: #6c757d;
+  }
+  
+  /* Activity timeline */
+  .activity-timeline {
+    width: 100%;
+  }
+  
+  .timeline-item {
+    padding: 1rem 0;
+    border-left: 2px solid #dee2e6;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #007bff;
+    position: absolute;
+    left: -7px;
+    top: 1.5rem;
+  }
+  
+  .timeline-date {
+    font-size: 0.75rem;
+    color: #6c757d;
+  }
+  
+  .timeline-content {
+    margin-top: 0.5rem;
+  }
+  
+  /* Project form */
+  .project-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Project tabs */
+  .project-tabs {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-pane {
+    padding: 1.5rem 0;
+  }
+  
+  /* Project management */
+  .form-section {
+    margin-bottom: 2rem;
+  }
+  
+  .form-section-title {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+  }

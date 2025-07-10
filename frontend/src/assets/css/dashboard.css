@@ -1,0 +1,69 @@
+/* Dashboard page specific styles */
+.dashboard-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Project cards */
+  .project-card {
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Activity chart */
+  .activity-chart-container {
+    height: 300px;
+    position: relative;
+  }
+  
+  /* Project stats */
+  .project-stats-card {
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .project-stats-card:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .stat-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-list-card {
+    overflow: hidden;
+  }
+  
+  .project-list-card .table {
+    margin-bottom: 0;
+  }
+  
+  .project-list-card .table td, .project-list-card .table th {
+    vertical-align: middle;
+  }
+  
+  /* New projects panel */
+  .new-projects-panel {
+    height: 100%;
+  }
+  
+  .new-project-item {
+    border-left: 3px solid #28a745;
+    background-color: rgba(40, 167, 69, 0.05);
+  }
+  
+  /* Project search */
+  .project-search-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .project-search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }

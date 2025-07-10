@@ -1,0 +1,50 @@
+# === PYTHON / DJANGO ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.db
+.env
+env/
+venv/
+media/
+static_root/
+*.DS_Store
+
+# Django migrations (optional)
+*/migrations/
+!*/migrations/__init__.py
+
+# === FRONTEND (React / Vite / TypeScript) ===
+node_modules/
+build/
+dist/
+*.log
+*.tsbuildinfo
+
+# Vite cache
+.vite/
+
+# Local environment files
+.env.local
+.env.*.local
+
+# === IDEs / Editors ===
+.vscode/
+.idea/
+
+# === SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+
+# === VERCEL (optional, if you're deploying) ===
+.vercel/
+
+# === TEST COVERAGE ===
+coverage/
+*.cover
+*.py,cover
+htmlcov/
