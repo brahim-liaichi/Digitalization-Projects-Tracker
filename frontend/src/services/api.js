@@ -1,7 +1,10 @@
 import axios from 'axios';
 
-// Base API URL
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000/api';
+// Base API URL - HARDCODED FOR NOW
+const API_URL = 'https://digitalization-projects-tracker.onrender.com/api';
+
+// Debug what we're actually using
+console.log('Using API URL:', API_URL);
 
 // Create axios instance with defaults
 const api = axios.create({
