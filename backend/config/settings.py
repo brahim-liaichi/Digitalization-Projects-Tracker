@@ -122,8 +122,7 @@ REST_FRAMEWORK = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React default port
     "http://127.0.0.1:3000",
-    # Add your Vercel domain here after deployment
-    # "https://your-app.vercel.app",
+    "https://digitalization-projects-tracker.vercel.app",  # Vercel frontend
 ]
 
 # Allow all origins in development, restrict in production
