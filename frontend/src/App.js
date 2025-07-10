@@ -5,6 +5,7 @@ import Header from './components/common/Header';
 import Sidebar from './components/common/Sidebar';
 import Footer from './components/common/Footer';
 import ErrorBoundary from './components/common/ErrorBoundary';
+import WelcomePopup from './components/common/WelcomePopup';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         </main>
       </div>
       <Footer />
+      <WelcomePopup />
     </div>
   );
 }

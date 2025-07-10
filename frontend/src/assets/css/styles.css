@@ -45,23 +45,81 @@ body {
     color: #495057;
     transition: all 0.2s;
     border-left: 3px solid transparent;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
   }
   
   .sidebar-link:hover {
     background-color: rgba(0, 123, 255, 0.1);
     border-left-color: rgba(0, 123, 255, 0.5);
+    color: #007bff;
+    text-decoration: none;
   }
   
   .sidebar-link.active {
     color: #007bff;
     background-color: rgba(0, 123, 255, 0.1);
     border-left-color: #007bff;
+    font-weight: 500;
+  }
+
+  .sidebar-link i {
+    width: 20px;
+    text-align: center;
   }
   
   /* Footer */
   .footer {
     height: 56px;
     line-height: 36px;
+  }
+  
+  /* Welcome Modal Styles */
+  .welcome-modal .modal-dialog {
+    max-width: 700px;
+  }
+  
+  .welcome-modal .modal-header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-radius: 0;
+  }
+  
+  .welcome-modal .modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .feature-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .feature-icon {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .feature-card:hover .feature-icon {
+    opacity: 1;
+  }
+  
+  .welcome-modal .btn {
+    border-radius: 25px;
+    padding: 8px 24px;
+    font-weight: 500;
+  }
+  
+  .welcome-modal .list-unstyled li {
+    padding: 8px 0;
+    font-size: 0.95rem;
   }
   
   /* Utility classes */
@@ -137,6 +195,16 @@ body {
     font-weight: 500;
   }
   
+  /* Settings icon enhancement */
+  .sidebar-link .fa-cog {
+    animation: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-link:hover .fa-cog {
+    transform: rotate(90deg);
+  }
+  
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .sidebar {
@@ -147,5 +215,14 @@ body {
     
     .main-container {
       flex-direction: column;
+    }
+    
+    .welcome-modal .modal-dialog {
+      max-width: 95%;
+      margin: 10px auto;
+    }
+    
+    .welcome-modal .feature-card {
+      margin-bottom: 1rem;
     }
   }

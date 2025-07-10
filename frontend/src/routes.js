@@ -9,7 +9,7 @@ const routes = [
     component: Dashboard,
     exact: true,
     name: 'Dashboard',
-    icon: 'dashboard'
+    icon: 'tachometer-alt'
   },
   {
     path: '/projects/:id',
@@ -23,14 +23,14 @@ const routes = [
     component: ProjectManagement,
     exact: true,
     name: 'Project Management',
-    icon: 'folder'
+    icon: 'folder-open'
   },
   {
     path: '/settings',
     component: Settings,
     exact: true,
     name: 'Settings',
-    icon: 'settings'
+    icon: 'cog'
   }
 ];
 
